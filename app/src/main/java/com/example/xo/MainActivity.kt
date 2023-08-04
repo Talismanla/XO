@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     var SEVEN1 = 0
     var EIGHT1 = 0
     var NINE1 = 0
+    var block = 0
 
 
 
@@ -37,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
         ButtonONE.setOnClickListener(
             View.OnClickListener {
-
+                if (checkBlock(block)){
                 if (count % 2 == 0) {
                     ButtonONE.setText("+")
                     ONE1 = 1
@@ -47,12 +48,12 @@ class MainActivity : AppCompatActivity() {
                 }
                 count++
                 check(text)
-            }
+            }}
         )
 
         ButtonTWO.setOnClickListener(
             View.OnClickListener {
-
+                if (checkBlock(block)){
                 if (count % 2 == 0) {
                     ButtonTWO.setText("+")
                     TWO1 = 1
@@ -62,14 +63,14 @@ class MainActivity : AppCompatActivity() {
                 }
                 count++
                 check(text)
-            }
+            }}
         )
 
 
 
         ButtonTHREE.setOnClickListener(
             View.OnClickListener {
-
+                if (checkBlock(block)){
                 if (count % 2 == 0) {
                     ButtonTHREE.setText("+")
                     THREE1 = 1
@@ -79,12 +80,12 @@ class MainActivity : AppCompatActivity() {
                 }
                 count++
                 check(text)
-            }
+            }}
         )
 
         ButtonFOUR.setOnClickListener(
             View.OnClickListener {
-
+                if (checkBlock(block)){
                 if (count % 2 == 0) {
                     ButtonFOUR.setText("+")
                     FOUR1 = 1
@@ -94,12 +95,12 @@ class MainActivity : AppCompatActivity() {
                 }
                 count++
                 check(text)
-            }
+            }}
         )
 
         ButtonFIVE.setOnClickListener(
             View.OnClickListener {
-
+                if (checkBlock(block)){
                 if (count % 2 == 0) {
                     ButtonFIVE.setText("+")
                     FIVE1 = 1
@@ -109,12 +110,12 @@ class MainActivity : AppCompatActivity() {
                 }
                 count++
                 check(text)
-            }
+            }}
         )
 
         ButtonSIX.setOnClickListener(
             View.OnClickListener {
-
+if (checkBlock(block)){
                 if (count % 2 == 0) {
                     ButtonSIX.setText("+")
                     SIX1 = 1
@@ -124,12 +125,12 @@ class MainActivity : AppCompatActivity() {
                 }
                 count++
                 check(text)
-            }
+            }}
         )
 
         ButtonSEVEN.setOnClickListener(
             View.OnClickListener {
-
+                if (checkBlock(block)){
                 if (count % 2 == 0) {
                     ButtonSEVEN.setText("+")
                     SEVEN1 = 1
@@ -139,12 +140,12 @@ class MainActivity : AppCompatActivity() {
                 }
                 count++
                 check(text)
-            }
+            }}
         )
 
         ButtonEIGHT.setOnClickListener(
             View.OnClickListener {
-
+                if (checkBlock(block)){
                 if (count % 2 == 0) {
                     ButtonEIGHT.setText("+")
                     EIGHT1 = 1
@@ -154,12 +155,12 @@ class MainActivity : AppCompatActivity() {
                 }
                 count++
                 check(text)
-            }
+            }}
         )
 
         ButtonNINE.setOnClickListener(
             View.OnClickListener {
-
+                if (checkBlock(block)){
                 if (count % 2 == 0) {
                     ButtonNINE.setText("+")
                     NINE1 = 1
@@ -169,7 +170,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 count++
                 check(text)
-            }
+            }}
         )
         ButtonReset.setOnClickListener(View.OnClickListener {
             count = 0
@@ -196,6 +197,9 @@ class MainActivity : AppCompatActivity() {
         })
 
     }
+   fun checkBlock (block: Int): Boolean {
+       return block == 1
+   }
 
     fun check(text:TextView) {
         if ((ONE1 == TWO1 && ONE1 == THREE1 && ONE1 == 1)
@@ -208,6 +212,7 @@ class MainActivity : AppCompatActivity() {
             || (SEVEN1 == EIGHT1 && SEVEN1 == NINE1 && NINE1 == 1)
         ) {
             text.text = "КРЕСТИКИ WIN"
+            block = 1
 
 
         } else if ((ONE1 == TWO1 && ONE1 == THREE1 && ONE1 == 2)
@@ -222,6 +227,7 @@ class MainActivity : AppCompatActivity() {
 
 
             text.text = "НОЛИКИ WIN"
+            block = 1
         }
     }
 }
