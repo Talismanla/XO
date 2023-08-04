@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
         ButtonONE.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block)){
+                if (checkBlock(block) && ONE1 == 0){
                 if (count % 2 == 0) {
                     ButtonONE.setText("+")
                     ONE1 = 1
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
         ButtonTWO.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block)){
+                if (checkBlock(block) && TWO1 == 0){
                 if (count % 2 == 0) {
                     ButtonTWO.setText("+")
                     TWO1 = 1
@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
 
         ButtonTHREE.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block)){
+                if (checkBlock(block) && THREE1 == 0){
                 if (count % 2 == 0) {
                     ButtonTHREE.setText("+")
                     THREE1 = 1
@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
 
         ButtonFOUR.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block)){
+                if (checkBlock(block) && FOUR1 == 0){
                 if (count % 2 == 0) {
                     ButtonFOUR.setText("+")
                     FOUR1 = 1
@@ -100,7 +100,7 @@ class MainActivity : AppCompatActivity() {
 
         ButtonFIVE.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block)){
+                if (checkBlock(block) && FIVE1 == 0){
                 if (count % 2 == 0) {
                     ButtonFIVE.setText("+")
                     FIVE1 = 1
@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
 
         ButtonSIX.setOnClickListener(
             View.OnClickListener {
-if (checkBlock(block)){
+if (checkBlock(block) && SIX1 == 0){
                 if (count % 2 == 0) {
                     ButtonSIX.setText("+")
                     SIX1 = 1
@@ -130,7 +130,7 @@ if (checkBlock(block)){
 
         ButtonSEVEN.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block)){
+                if (checkBlock(block) && SEVEN1 == 0){
                 if (count % 2 == 0) {
                     ButtonSEVEN.setText("+")
                     SEVEN1 = 1
@@ -145,7 +145,7 @@ if (checkBlock(block)){
 
         ButtonEIGHT.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block)){
+                if (checkBlock(block) && EIGHT1 == 0){
                 if (count % 2 == 0) {
                     ButtonEIGHT.setText("+")
                     EIGHT1 = 1
@@ -160,7 +160,7 @@ if (checkBlock(block)){
 
         ButtonNINE.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block)){
+                if (checkBlock(block) && NINE1 == 0){
                 if (count % 2 == 0) {
                     ButtonNINE.setText("+")
                     NINE1 = 1
