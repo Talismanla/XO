@@ -193,7 +193,7 @@ if (checkBlock(block)){
             ButtonTWO.setText("")
             ButtonONE.setText("")
             text.text = ""
-
+            block = 0
         })
 
     }
