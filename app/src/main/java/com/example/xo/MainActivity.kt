@@ -198,7 +198,7 @@ if (checkBlock(block)){
 
     }
    fun checkBlock (block: Int): Boolean {
-       return block == 1
+       return block == 0
    }
 
     fun check(text:TextView) {
