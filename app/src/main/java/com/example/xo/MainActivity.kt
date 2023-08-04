@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
     var block = 0
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -38,151 +37,160 @@ class MainActivity : AppCompatActivity() {
 
         ButtonONE.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block) && ONE1 == 0){
-                if (count % 2 == 0) {
-                    ButtonONE.setText("+")
-                    ONE1 = 1
-                } else {
-                    ButtonONE.setText("o")
-                    ONE1 = 2
+                if (checkBlock(block) && ONE1 == 0) {
+                    if (count % 2 == 0) {
+                        ButtonONE.setText("+")
+                        ONE1 = 1
+                    } else {
+                        ButtonONE.setText("o")
+                        ONE1 = 2
+                    }
+                    count++
+                    check(text)
                 }
-                count++
-                check(text)
-            }}
+            }
         )
 
         ButtonTWO.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block) && TWO1 == 0){
-                if (count % 2 == 0) {
-                    ButtonTWO.setText("+")
-                    TWO1 = 1
-                } else {
-                    ButtonTWO.setText("o")
-                    TWO1 = 2
+                if (checkBlock(block) && TWO1 == 0) {
+                    if (count % 2 == 0) {
+                        ButtonTWO.setText("+")
+                        TWO1 = 1
+                    } else {
+                        ButtonTWO.setText("o")
+                        TWO1 = 2
+                    }
+                    count++
+                    check(text)
                 }
-                count++
-                check(text)
-            }}
+            }
         )
 
 
 
         ButtonTHREE.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block) && THREE1 == 0){
-                if (count % 2 == 0) {
-                    ButtonTHREE.setText("+")
-                    THREE1 = 1
-                } else {
-                    ButtonTHREE.setText("o")
-                    THREE1 = 2
+                if (checkBlock(block) && THREE1 == 0) {
+                    if (count % 2 == 0) {
+                        ButtonTHREE.setText("+")
+                        THREE1 = 1
+                    } else {
+                        ButtonTHREE.setText("o")
+                        THREE1 = 2
+                    }
+                    count++
+                    check(text)
                 }
-                count++
-                check(text)
-            }}
+            }
         )
 
         ButtonFOUR.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block) && FOUR1 == 0){
-                if (count % 2 == 0) {
-                    ButtonFOUR.setText("+")
-                    FOUR1 = 1
-                } else {
-                    ButtonFOUR.setText("o")
-                    FOUR1 = 2
+                if (checkBlock(block) && FOUR1 == 0) {
+                    if (count % 2 == 0) {
+                        ButtonFOUR.setText("+")
+                        FOUR1 = 1
+                    } else {
+                        ButtonFOUR.setText("o")
+                        FOUR1 = 2
+                    }
+                    count++
+                    check(text)
                 }
-                count++
-                check(text)
-            }}
+            }
         )
 
         ButtonFIVE.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block) && FIVE1 == 0){
-                if (count % 2 == 0) {
-                    ButtonFIVE.setText("+")
-                    FIVE1 = 1
-                } else {
-                    ButtonFIVE.setText("o")
-                    FIVE1 = 2
+                if (checkBlock(block) && FIVE1 == 0) {
+                    if (count % 2 == 0) {
+                        ButtonFIVE.setText("+")
+                        FIVE1 = 1
+                    } else {
+                        ButtonFIVE.setText("o")
+                        FIVE1 = 2
+                    }
+                    count++
+                    check(text)
                 }
-                count++
-                check(text)
-            }}
+            }
         )
 
         ButtonSIX.setOnClickListener(
             View.OnClickListener {
-if (checkBlock(block) && SIX1 == 0){
-                if (count % 2 == 0) {
-                    ButtonSIX.setText("+")
-                    SIX1 = 1
-                } else {
-                    ButtonSIX.setText("o")
-                    SIX1 = 2
+                if (checkBlock(block) && SIX1 == 0) {
+                    if (count % 2 == 0) {
+                        ButtonSIX.setText("+")
+                        SIX1 = 1
+                    } else {
+                        ButtonSIX.setText("o")
+                        SIX1 = 2
+                    }
+                    count++
+                    check(text)
                 }
-                count++
-                check(text)
-            }}
+            }
         )
 
         ButtonSEVEN.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block) && SEVEN1 == 0){
-                if (count % 2 == 0) {
-                    ButtonSEVEN.setText("+")
-                    SEVEN1 = 1
-                } else {
-                    ButtonSEVEN.setText("o")
-                    SEVEN1 = 2
+                if (checkBlock(block) && SEVEN1 == 0) {
+                    if (count % 2 == 0) {
+                        ButtonSEVEN.setText("+")
+                        SEVEN1 = 1
+                    } else {
+                        ButtonSEVEN.setText("o")
+                        SEVEN1 = 2
+                    }
+                    count++
+                    check(text)
                 }
-                count++
-                check(text)
-            }}
+            }
         )
 
         ButtonEIGHT.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block) && EIGHT1 == 0){
-                if (count % 2 == 0) {
-                    ButtonEIGHT.setText("+")
-                    EIGHT1 = 1
-                } else {
-                    ButtonEIGHT.setText("o")
-                    EIGHT1 = 2
+                if (checkBlock(block) && EIGHT1 == 0) {
+                    if (count % 2 == 0) {
+                        ButtonEIGHT.setText("+")
+                        EIGHT1 = 1
+                    } else {
+                        ButtonEIGHT.setText("o")
+                        EIGHT1 = 2
+                    }
+                    count++
+                    check(text)
                 }
-                count++
-                check(text)
-            }}
+            }
         )
 
         ButtonNINE.setOnClickListener(
             View.OnClickListener {
-                if (checkBlock(block) && NINE1 == 0){
-                if (count % 2 == 0) {
-                    ButtonNINE.setText("+")
-                    NINE1 = 1
-                } else {
-                    ButtonNINE.setText("o")
-                    NINE1 = 2
+                if (checkBlock(block) && NINE1 == 0) {
+                    if (count % 2 == 0) {
+                        ButtonNINE.setText("+")
+                        NINE1 = 1
+                    } else {
+                        ButtonNINE.setText("o")
+                        NINE1 = 2
+                    }
+                    count++
+                    check(text)
                 }
-                count++
-                check(text)
-            }}
+            }
         )
         ButtonReset.setOnClickListener(View.OnClickListener {
             count = 0
-           ONE1 = 0
-             TWO1 = 0
-             THREE1 = 0
-             FOUR1 = 0
-             FIVE1 = 0
-             SIX1 = 0
+            ONE1 = 0
+            TWO1 = 0
+            THREE1 = 0
+            FOUR1 = 0
+            FIVE1 = 0
+            SIX1 = 0
             SEVEN1 = 0
-             EIGHT1 = 0
-             NINE1= 0
+            EIGHT1 = 0
+            NINE1 = 0
             ButtonNINE.setText("")
             ButtonEIGHT.setText("")
             ButtonSEVEN.setText("")
@@ -197,11 +205,12 @@ if (checkBlock(block) && SIX1 == 0){
         })
 
     }
-   fun checkBlock (block: Int): Boolean {
-       return block == 0
-   }
 
-    fun check(text:TextView) {
+    fun checkBlock(block: Int): Boolean {
+        return block == 0
+    }
+
+    fun check(text: TextView) {
         if ((ONE1 == TWO1 && ONE1 == THREE1 && ONE1 == 1)
             || (ONE1 == FIVE1 && ONE1 == NINE1 && ONE1 == 1)
             || (ONE1 == FOUR1 && ONE1 == SEVEN1 && ONE1 == 1)
@@ -227,6 +236,20 @@ if (checkBlock(block) && SIX1 == 0){
 
 
             text.text = "НОЛИКИ WIN"
+            block = 1
+        } else if (
+            ONE1 != 0 &&
+            TWO1 != 0 &&
+            THREE1 != 0 &&
+            FOUR1 != 0 &&
+            FIVE1 != 0 &&
+            SIX1 != 0 &&
+            SEVEN1 != 0 &&
+            EIGHT1 != 0 &&
+            NINE1 != 0
+        ) {
+
+            text.text = "НИЧЬЯ"
             block = 1
         }
     }
