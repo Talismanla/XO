@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     var EIGHT1 = 0
     var NINE1 = 0
     var block = 0
-
+    var check = "check"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
